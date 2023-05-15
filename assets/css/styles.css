@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+
+:root {
+    --sizeXs: calc(1rem * 0.5);
+    --sizeSm: calc(var(--sizeXs) * 1.5);
+    --sizeMd: calc(var(--sizeSm) * 1.5);
+    --sizeLg: calc(var(--sizeMd) * 1.5);
+    --sizeXl: calc(var(--sizeLg) * 1.5);
+    font-family: 'Exo 2', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: var(--sizeSm);
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.landingPage {
+    padding-top: var(--sizeXl);
+}
+
+.headshot {
+    display: flex;
+    justify-content: center;
+}
+
+.profilePic {
+    width: 33vh;
+    height: 33vh;
+}
+
+.homeText {
+    padding: var(--sizeLg);
+}
